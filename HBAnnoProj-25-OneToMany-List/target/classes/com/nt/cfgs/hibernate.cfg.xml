@@ -17,8 +17,8 @@
 		<!-- dialet cfg -->
 		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
 		<!--mapping cfg -->
-		<mapping resource="com/nt/domain/Phno.hbm.xml" />
-		<mapping resource="com/nt/domain/Person.hbm.xml" />
+		<mapping class="com.nt.domain.Phno" />
+		<mapping class="com.nt.domain.Person" />
 	</session-factory>
 </hibernate-configuration>
         

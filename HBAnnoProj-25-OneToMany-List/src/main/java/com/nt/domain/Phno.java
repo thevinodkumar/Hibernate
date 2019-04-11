@@ -1,8 +1,19 @@
 package com.nt.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="phno")
 public class Phno {
+	@Id
+	//@Column(name="no")
 	private int no;
+	//@Column(name="ph1")
 	private long ph1;
+	@Column(name="ph_type")
 	private String type;
 
 	public int getNo() {
