@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Apr 11, 2019 11:32:01 AM by Hibernate Tools 5.2.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.nt.domain.PhoneNumber" optimistic-lock="version" polymorphism="implicit" schema="SCOTT" select-before-update="false" table="PHONE_NUMBER">
+        <id name="phone" type="long">
+            <column name="PHONE" precision="10" scale="0"/>
+            <generator class="assigned"/>
+        </id>
+        <many-to-one class="com.nt.domain.UserTable" name="userTable" lazy="proxy" cascade="all">
+            <column name="UNID" precision="5" scale="0"/>
+        </many-to-one>
+        <property generated="never" lazy="false" name="numberType" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="NUMBER_TYPE"/>
+        </property>
+    </class>
+</hibernate-mapping>
