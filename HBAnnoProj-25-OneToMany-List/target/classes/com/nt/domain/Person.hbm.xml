@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 10, 2019 3:33:55 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.nt.domain.Person" table="PERSON">
+		<id name="no" type="int">
+			<column name="NO" />
+			<generator class="increment" />
+		</id>
+		<property name="name" type="string">
+			<column name="NAME" />
+		</property>
+		<list name="list" cascade="all-delete-orphan" lazy="extra">
+			<key column="no"/>
+			<list-index column="list_no"/>
+			<one-to-many class="com.nt.domain.Phno"/>
+		</list>
+	</class>
+</hibernate-mapping>
