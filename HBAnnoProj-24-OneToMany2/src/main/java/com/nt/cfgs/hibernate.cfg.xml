@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.username">scott</property>
+		<property name="connection.password">tiger</property>
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+		<property name="connection.driver-classname">oracle.jdbc.driver.OracleDriver</property>
+		<property name="show_url">true</property>
+		<property name="format_url">true</property>
+		<!-- to specify connection pool size of build-in connection pool -->
+		<property name="connection.pool_size">30</property>
+		<property name="hbm2ddl.auto">update</property>
+		<!-- dialet cfg -->
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<!--mapping cfg -->
+		<mapping class="com.nt.domain.Phno"/>
+		<mapping class="com.nt.domain.Person" />
+	</session-factory>
+</hibernate-configuration>
+        
