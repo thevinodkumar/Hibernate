@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Apr 11, 2019 11:32:01 AM by Hibernate Tools 5.2.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class name="com.nt.domain.UserTable" optimistic-lock="version" polymorphism="implicit" schema="SCOTT" select-before-update="false" table="USER_TABLE">
+        <id name="userId" type="long" >
+            <column name="USER_ID" precision="10"  scale="0"/>
+            <generator class="increment"/>
+        </id>
+        <property generated="never" lazy="false" name="firstName" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="FIRST_NAME"/>
+        </property>
+        <set inverse="true" lazy="extra"  name="phoneNumbers"  cascade="all" >
+            <key on-delete="noaction">
+                <column name="UNID" precision="5" scale="0"/>
+            </key>
+            <one-to-many class="com.nt.domain.PhoneNumber"  not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>
