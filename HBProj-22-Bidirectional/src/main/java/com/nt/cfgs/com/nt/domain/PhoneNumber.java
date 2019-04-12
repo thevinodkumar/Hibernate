@@ -1,5 +1,5 @@
 package com.nt.domain;
-// Generated Apr 12, 2019 11:23:55 AM by Hibernate Tools 5.2.12.Final
+// Generated Apr 12, 2019 11:25:49 AM by Hibernate Tools 5.2.12.Final
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
