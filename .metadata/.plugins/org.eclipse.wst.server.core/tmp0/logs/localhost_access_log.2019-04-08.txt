@@ -1,0 +1,10 @@
+127.0.0.1 - - [08/Apr/2019:14:29:31 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [08/Apr/2019:14:29:32 +0530] "GET /HBProj58-PaginationLayeredApp/ HTTP/1.1" 404 1108
+127.0.0.1 - - [08/Apr/2019:14:33:16 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [08/Apr/2019:14:33:18 +0530] "GET /HBProj58-PaginationLayeredApp/ HTTP/1.1" 200 315
+0:0:0:0:0:0:0:1 - - [08/Apr/2019:14:33:25 +0530] "POST /HBProj58-PaginationLayeredApp/controller HTTP/1.1" 200 75
+0:0:0:0:0:0:0:1 - - [08/Apr/2019:14:35:54 +0530] "GET /HBProj58-PaginationLayeredApp/ HTTP/1.1" 200 315
+0:0:0:0:0:0:0:1 - - [08/Apr/2019:14:35:58 +0530] "POST /HBProj58-PaginationLayeredApp/controller HTTP/1.1" 200 937
+0:0:0:0:0:0:0:1 - - [08/Apr/2019:14:36:09 +0530] "GET /HBProj58-PaginationLayeredApp/controller?type=link&pageNo=2 HTTP/1.1" 200 937
+0:0:0:0:0:0:0:1 - - [08/Apr/2019:14:36:13 +0530] "GET /HBProj58-PaginationLayeredApp/controller?type=link&pageNo=3 HTTP/1.1" 200 937
+0:0:0:0:0:0:0:1 - - [08/Apr/2019:14:36:25 +0530] "GET /HBProj58-PaginationLayeredApp/controller?type=link&pageNo=1 HTTP/1.1" 200 937
